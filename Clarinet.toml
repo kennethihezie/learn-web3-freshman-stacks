@@ -4,9 +4,25 @@ description = ''
 authors = []
 telemetry = true
 cache_dir = './.cache'
-requirements = []
+
+[[project.requirements]]
+contract_id = 'SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait'
+
+[[project.requirements]]
+contract_id = 'SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard'
+
 [contracts.Mood]
 path = 'contracts/Mood.clar'
+clarity_version = 1
+epoch = 2.0
+
+[contracts.punish-nft]
+path = 'contracts/punish-nft.clar'
+clarity_version = 1
+epoch = 2.0
+
+[contracts.slave-token]
+path = 'contracts/slave-token.clar'
 clarity_version = 1
 epoch = 2.0
 [repl.analysis]

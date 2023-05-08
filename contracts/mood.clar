@@ -1,8 +1,8 @@
 
 ;; title: Mood
-;; version:
-;; summary:
-;; description:
+;; version: 0.01
+;; summary: write mood to stack blockchain
+;; description: write mood to stack blockchain
 
 ;; traits
 ;;
@@ -27,11 +27,10 @@
   )
 )
 
+;; read only functions
 (define-read-only (get-mood) 
  (ok (var-get mood))
 )
-;; read only functions
-;;
 
 ;; private functions
 ;;
